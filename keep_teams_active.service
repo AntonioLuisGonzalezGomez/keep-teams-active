@@ -1,0 +1,11 @@
+[Unit]
+Description=Mantener Microsoft Teams siempre Disponible
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/home/antongon/keep_teams_active.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
